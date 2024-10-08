@@ -21,3 +21,27 @@ class Runner(models.Model):
 
     def __str__(self):
         return f"{self.name} {self.age} {self.car}"
+
+
+class Publisher(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return f"{self.name}"
+
+
+class Author(models.Model):
+    name = models.CharField(max_length=50)
+    birth_date = models.DateField()
+
+    def __str__(self):
+        return f"{self.name} {self.birth_date}"
+
+
+class Book(models.Model):
+    title = models.CharField(max_length=50)
+    publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE, related_name='books')
+    authors = models.ManyToManyField(Author, related_name='books')
+
+    def __str__(self):
+        return f"{self.title} {self.publisher} {self.authors}"

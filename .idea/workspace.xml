@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="027e81f3-b3fd-413a-827b-1124209f1d6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/django_course.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_course/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_course/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_course/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_course/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_course/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/de118def-5555-45fb-a499-9869a9109e6d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/de118def-5555-45fb-a499-9869a9109e6d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_first_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_first_app/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +92,7 @@
       <workItem from="1727551480965" duration="14000" />
       <workItem from="1728247522390" duration="317000" />
       <workItem from="1728247868156" duration="722000" />
-      <workItem from="1728345934612" duration="4691000" />
+      <workItem from="1728345934612" duration="6205000" />
     </task>
     <servers />
   </component>
