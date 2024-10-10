@@ -45,3 +45,12 @@ class Book(models.Model):
 
     def __str__(self):
         return f"{self.title} {self.publisher} {self.authors}"
+
+
+class Profile(models.Model):
+    website = models.URLField()
+    bio = models.TextField()
+    author = models.OneToOneField(Author, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.website} {self.bio} {self.author}"
