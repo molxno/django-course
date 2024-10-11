@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from my_first_app.models import Book
+
 
 # Create your views here.
 def index(request):
@@ -24,3 +26,17 @@ def index(request):
         "cars": cars
     }
     return render(request, 'index.html', context)
+
+def books(request):
+    books_query = Book.objects.all()
+    context = {
+        "books": books_query
+    }
+    return render(request, 'books.html', context)
+
+def book(request, book_id):
+    book_query = Book.objects.get(id=book_id)
+    context = {
+        "book": book_query
+    }
+    return render(request, 'book.html', context)
