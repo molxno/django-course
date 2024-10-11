@@ -1,3 +1,4 @@
+from django.views.generic import TemplateView
 from django.shortcuts import render
 
 from my_first_app.models import Book
@@ -27,12 +28,23 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
+
 def books(request):
     books_query = Book.objects.all()
     context = {
         "books": books_query
     }
     return render(request, 'books.html', context)
+
+
+class BooksView(TemplateView):
+    template_name = 'books.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['books'] = Book.objects.all()
+        return context
+
 
 def book(request, book_id):
     book_query = Book.objects.get(id=book_id)
